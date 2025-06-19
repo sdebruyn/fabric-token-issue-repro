@@ -1,0 +1,3 @@
+pyodbc
+ms-fabric-cli
+azure-identity
