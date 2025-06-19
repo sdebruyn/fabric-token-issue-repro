@@ -8,9 +8,14 @@ This repo contains the Fabric items and can be linked to a Fabric Workspace.
 
 1. Create a service principal, give it access to the Workspace (I gave full admin)
 1. Install Fabric CLI
-1. Fill in credentials in testrun.sh
-1. Use testrun.sh to copy Data Pipeline so that it is owned by SP (optional)
+1. Fill in credentials in test_run.sh
+1. Use test_run.sh to copy Data Pipeline so that it is owned by SP (optional)
 1. Start a test run of the Notebook as the SP
+
+## Relevant files
+
+* `test_run.sh`: Script to run the test Notebook as a service principal.
+* `test_local.sh`: Same as what the notebook does, but using `azure-identity` to get a token for the service principal.
 
 ## Findings
 
